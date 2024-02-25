@@ -11,7 +11,7 @@ function Navbar({ className }: { className?: string }) {
 
   return (
     <div 
-        className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+        className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 shadow-[0px_0px_4px_white] rounded-full", className)}>
         <Menu setActive={setActive}>
             <Link href={"#"}>
                 <MenuItem setActive={setActive} active={active} item="Home">
